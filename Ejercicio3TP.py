@@ -1,8 +1,8 @@
-SueldoBasico= input("Ingrese su sueldo basico:")
+SueldoBasico= int(input("Ingrese su sueldo basico:"))
 AsistenciaPerfecta=40000
 HoraExtra=5000
-DescuentoJubilacion=(11/SueldoBasico) * 100
-DescuentoObraSocial=(11/SueldoBasico) * 100
+DescuentoJubilacion=SueldoBasico * 0.11
+DescuentoObraSocial=SueldoBasico * 0.02
 AñoAntigüedad=8000
 SueldoTotalEmpleado=SueldoBasico+AsistenciaPerfecta+HoraExtra+AñoAntigüedad-DescuentoJubilacion-DescuentoObraSocial
 print("Sueldo Empleado")
